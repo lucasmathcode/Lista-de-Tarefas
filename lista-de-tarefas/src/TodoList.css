@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400&display=swap");
+
+body {
+  background-color: #1a1a1a;
+  font-family: "Roboto", sans-serif;
+  color: #f0e7db;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+  color: #ff7518;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff7518;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: #f4f1ea;
+}
+
+button.add {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff7518;
+  border: none;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button.add:hover {
+  background-color: #e66600;
+}
+
+.listaTarefas {
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.no-tasks {
+  color: #ff7518;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #292929;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: #f0e7db;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.item:hover {
+  background: #3b3b3b;
+}
+
+.item span {
+  flex-grow: 1;
+  color: #f0e7db;
+}
+
+.item.completo span {
+  color: #8c8c8c;
+  text-decoration: line-through;
+}
+
+button.del {
+  background: none;
+  border: none;
+  color: #d9534f;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+button.del:hover {
+  color: #ff4444;
+}
+
+button.deleteAll {
+  width: 100%;
+  background: #ff4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+button.deleteAll:hover {
+  background: #cc0000;
+}
+
+@media screen and (max-width: 600px) {
+  form,
+  .listaTarefas {
+    width: 95%;
+  }
+}
